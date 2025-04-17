@@ -1,0 +1,158 @@
+/* InvoiceComponent.css */
+
+.invoice-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .invoice-form {
+    margin-bottom: 40px;
+  }
+  
+  .invoice-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .invoice-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #000;
+  }
+  
+  .invoice-form input[type="text"],
+  .invoice-form input[type="number"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .invoice-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .invoice-item input {
+    flex: 1;
+    min-width: 100px;
+  }
+  
+  .invoice-item button {
+    background-color: #e74c3c;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .invoice-item button:hover {
+    background-color: #c0392b;
+  }
+  
+  button[type="buttonA"],
+  button[type="submit"],
+  .print-button {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button[type="buttonA"]:hover,
+  button[type="submit"]:hover,
+  .print-button:hover {
+    background-color: #2980b9;
+  }
+  button[type="button"] {
+    background-color: #db3434;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #b92929;
+  }
+  
+  .total {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    text-align: right;
+    color: #2c3e50;
+  }
+  
+  .invoice-preview {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .invoice-preview h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .invoice-preview p {
+    margin: 5px 0;
+  }
+  
+  .invoice-preview table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .invoice-preview th,
+  .invoice-preview td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .invoice-preview th {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .invoice-preview h3 {
+    text-align: right;
+    margin-top: 20px;
+    color: #2c3e50;
+  }
+  
+  @media (max-width: 600px) {
+    .invoice-item {
+      flex-direction: column;
+    }
+  
+    .invoice-preview table,
+    .invoice-preview th,
+    .invoice-preview td {
+      font-size: 14px;
+    }
+  }
+  
