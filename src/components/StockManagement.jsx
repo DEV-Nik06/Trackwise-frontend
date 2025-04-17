@@ -12,7 +12,7 @@ function StockManagement() {
 
   // Fetch stock data from backend
   useEffect(() => {
-    fetch("http://localhost:5000/stock")
+    fetch("https://trackwise-backend-k5rj.onrender.com/stock")
       .then((res) => res.json())
       .then((data) => setStock(data))
       .catch((err) => console.error("Error fetching stock:", err));
@@ -26,7 +26,7 @@ function StockManagement() {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5000/stock", {
+    fetch("https://trackwise-backend-k5rj.onrender.com/stock", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -50,7 +50,7 @@ function StockManagement() {
   const handleDelete = (id) => {
     if (!window.confirm("Are you sure you want to delete this item?")) return;
 
-    fetch(`http://localhost:5000/stock/${id}`, {
+    fetch(`https://trackwise-backend-k5rj.onrender.com/stock/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

@@ -12,8 +12,8 @@ function Dashboard() {
   useEffect(() => {
     // Fetch stock count, income, and expenses from API
     Promise.all([
-      fetch("http://localhost:5000/stock").then((res) => res.json()),
-      fetch("http://localhost:5000/income-expense").then((res) => res.json()),
+      fetch("https://trackwise-backend-k5rj.onrender.com/stock").then((res) => res.json()),
+      fetch("https://trackwise-backend-k5rj.onrender.com/income-expense").then((res) => res.json()),
     ])
       .then(([stockData, incomeExpenseData]) => {
         // console.log("Stock Data:", stockData); 

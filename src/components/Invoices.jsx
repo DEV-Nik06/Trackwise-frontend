@@ -11,7 +11,7 @@ const InvoiceComponent = () => {
   useEffect(() => {
     const fetchInvoice = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/invoice');
+        const response = await fetch('https://trackwise-backend-k5rj.onrender.com/api/invoice');
         if (!response.ok) throw new Error('Failed to fetch data');
         const data = await response.json();
         if (data) {
@@ -65,7 +65,7 @@ const InvoiceComponent = () => {
       total_amount: totalAmount,
     };
     try {
-      const response = await fetch('http://localhost:5000/api/invoice', {
+      const response = await fetch('https://trackwise-backend-k5rj.onrender.com/api/invoice', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(invoiceData),

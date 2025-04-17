@@ -8,7 +8,7 @@ const IncomeExpense = () => {
 
   // Fetch Data from Backend
   useEffect(() => {
-    fetch("http://localhost:5000/income-expense")
+    fetch("https://trackwise-backend-k5rj.onrender.com/income-expense")
       .then((res) => res.json())
       .then((data) => setEntries(data))
       .catch((err) => console.error(err));
@@ -33,7 +33,7 @@ const IncomeExpense = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/income-expense", {
+      const response = await fetch("https://trackwise-backend-k5rj.onrender.com/income-expense", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -61,7 +61,7 @@ const IncomeExpense = () => {
   };
   const deleteEntry = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/income-expense/${id}`, {
+      const response = await fetch(`https://trackwise-backend-k5rj.onrender.com/income-expense/${id}`, {
         method: "DELETE",
       });
   
