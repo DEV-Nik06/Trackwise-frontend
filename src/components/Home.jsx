@@ -12,7 +12,7 @@ const Home = () => {
           <p>Track and manage your finances, stock, and invoices all in one place.</p>
           <Link to="/dashboard" className="cta-button">Get Started</Link>
         </div>
-        <img src="../../src/assets/finance.png" alt="Finance Illustration" className="hero-img" />
+        <img src="/finance.png" alt="Finance Illustration" className="hero-img" />
       </header>
 
       {/* Features Section */}
